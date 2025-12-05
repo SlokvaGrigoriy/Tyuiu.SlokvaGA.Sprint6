@@ -121,7 +121,7 @@
   <data name="pictureBoxFormula_SGA.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGoAAAA9CAYAAABFqvzYAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAABX9JREFUeF7tmu9nK1kYx/c/zKtRhjJCooxyo4y+6Kg7lsbqWBqlWTIum764fVFZ
+        vAAADrwBlbxySQAABX9JREFUeF7tmu9nK1kYx/c/zKtRhjJCooxyo4y+6Kg7lsbqWBqlWTIum764fVFZ
         OupKWVlXSqUqfVGhclmhcrlCGGII333OzJkm7d38lKQ5nfNhyEzKTPOZ85znOc/5BRIhkKIEQYoSBClK
         EKQoQZCiBEGKEgQpShCkKEGQopaN10TpNwPZ4xzMpAK9UIfHv5oFKWrJND6pSGxkUe3SyW0OiYSC/H34
         3Sy8E1Ee6icaEh9KaPMr60L7i4X0jo3KdzoJRKmwr2cfU+9ClHeXh5ZIrKWoAR6qhwqUD0U0evzSDIgv
@@ -148,6 +148,9 @@
         gg==
 </value>
   </data>
+  <metadata name="groupBoxCondition_SGA.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="textBoxVariable_SGA.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

@@ -1,7 +1,9 @@
 ﻿
+using Tyuiu.SlokvaGA.Sprint6.Task0.V9.Lib;
+
 namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
 {
-    partial class FormMain
+    partial class FormMain : Form
     {
         /// <summary>
         ///  Required designer variable.
@@ -89,7 +91,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             button_SGA.TabIndex = 0;
             button_SGA.Text = "Выполнить";
             button_SGA.UseVisualStyleBackColor = true;
-            button_SGA.Click += this.button_SGA_Click;
+            button_SGA.Click += button_SGA_Click;
             // 
             // textBoxVariable_SGA
             // 
@@ -99,7 +101,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             textBoxVariable_SGA.Size = new Size(89, 23);
             textBoxVariable_SGA.TabIndex = 2;
             textBoxVariable_SGA.Text = "3";
-            textBoxVariable_SGA.TextChanged += textBox1_TextChanged;
+            textBoxVariable_SGA.TextChanged += textBoxVariable_SGA_TextChanged;
             // 
             // groupBoxInput_SGA
             // 
@@ -111,7 +113,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             groupBoxInput_SGA.TabIndex = 3;
             groupBoxInput_SGA.TabStop = false;
             groupBoxInput_SGA.Text = "Ввод данных";
-            groupBoxInput_SGA.Enter += this.groupBoxInput_SGA_Enter;
+            groupBoxInput_SGA.Enter += groupBoxInput_SGA_Enter;
             // 
             // labelVariable_SGA
             // 
@@ -132,7 +134,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             groupBoxOutput_SGA.TabIndex = 4;
             groupBoxOutput_SGA.TabStop = false;
             groupBoxOutput_SGA.Text = "Вывод данных";
-            groupBoxOutput_SGA.Enter += this.groupBoxOutput_SGA_Enter;
+            groupBoxOutput_SGA.Enter += groupBoxOutput_SGA_Enter;
             // 
             // textBoxResult_SGA
             // 
@@ -141,7 +143,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             textBoxResult_SGA.ReadOnly = true;
             textBoxResult_SGA.Size = new Size(150, 23);
             textBoxResult_SGA.TabIndex = 5;
-            textBoxResult_SGA.TextChanged += this.textBoxResult_SGA_TextChanged;
+            textBoxResult_SGA.TextChanged += textBoxVariable_SGA_TextChanged;
             // 
             // labelResult_SGA
             // 
@@ -185,34 +187,42 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             ResumeLayout(false);
         }
 
-        private void textBoxResult_SGA_TextChanged(object sender, EventArgs e)
+        private void textBoxVariable_SGA_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
         }
 
         private void groupBoxOutput_SGA_Enter(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
         }
 
         private void groupBoxInput_SGA_Enter(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
         }
 
         private void button_SGA_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DataService ds = new DataService();
+                double result = ds.Calculate(Convert.ToInt32(textBoxVariable_SGA.Text));
+                textBoxResult_SGA.Text = Math.Round(result, 3).ToString("F3");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка при вычислении", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            throw new NotImplementedException();
+            if (e.KeyChar == '3')
+            {
+                e.Handled = true;
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
         }
 
         #endregion

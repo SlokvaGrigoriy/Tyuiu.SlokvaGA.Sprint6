@@ -8,7 +8,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("C# Huyna");
+            MessageBox.Show("Таск 0 выполнил студент группы ИСПб-25-1 Слоква Григорий Александрович");
         }
     }
 }
