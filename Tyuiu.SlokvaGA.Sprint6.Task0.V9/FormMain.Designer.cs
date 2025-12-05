@@ -89,6 +89,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             button_SGA.TabIndex = 0;
             button_SGA.Text = "Выполнить";
             button_SGA.UseVisualStyleBackColor = true;
+            button_SGA.Click += this.button_SGA_Click;
             // 
             // textBoxVariable_SGA
             // 
@@ -110,6 +111,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             groupBoxInput_SGA.TabIndex = 3;
             groupBoxInput_SGA.TabStop = false;
             groupBoxInput_SGA.Text = "Ввод данных";
+            groupBoxInput_SGA.Enter += this.groupBoxInput_SGA_Enter;
             // 
             // labelVariable_SGA
             // 
@@ -130,6 +132,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             groupBoxOutput_SGA.TabIndex = 4;
             groupBoxOutput_SGA.TabStop = false;
             groupBoxOutput_SGA.Text = "Вывод данных";
+            groupBoxOutput_SGA.Enter += this.groupBoxOutput_SGA_Enter;
             // 
             // textBoxResult_SGA
             // 
@@ -138,6 +141,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             textBoxResult_SGA.ReadOnly = true;
             textBoxResult_SGA.Size = new Size(150, 23);
             textBoxResult_SGA.TabIndex = 5;
+            textBoxResult_SGA.TextChanged += this.textBoxResult_SGA_TextChanged;
             // 
             // labelResult_SGA
             // 
@@ -157,6 +161,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             buttonHelp.TabIndex = 5;
             buttonHelp.Text = "?";
             buttonHelp.UseVisualStyleBackColor = true;
+            buttonHelp.Click += buttonHelp_Click;
             // 
             // FormMain
             // 
@@ -178,6 +183,26 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             groupBoxOutput_SGA.ResumeLayout(false);
             groupBoxOutput_SGA.PerformLayout();
             ResumeLayout(false);
+        }
+
+        private void textBoxResult_SGA_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void groupBoxOutput_SGA_Enter(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void groupBoxInput_SGA_Enter(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void button_SGA_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
