@@ -215,10 +215,6 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == '3')
-            {
-                e.Handled = true;
-            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
