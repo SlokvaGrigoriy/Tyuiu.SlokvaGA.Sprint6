@@ -20,7 +20,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task1.V14.Lib
                 }
                 else
                 {
-                    double result = 2 * x + 6 / denominator - 3;
+                    double result = (2 * x + 6) / denominator - 3;
                     valueArray[i] = Math.Round(result, 2);
                 }
             }
