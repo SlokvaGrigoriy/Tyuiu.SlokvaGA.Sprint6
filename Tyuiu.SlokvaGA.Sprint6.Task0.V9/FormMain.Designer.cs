@@ -32,66 +32,22 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            pictureBoxFormula_SGA = new PictureBox();
-            groupBoxCondition_SGA = new GroupBox();
-            labelCondition_SGA = new Label();
-            button_SGA = new Button();
             textBoxVariable_SGA = new TextBox();
+            buttonDone_SGA = new Button();
             groupBoxInput_SGA = new GroupBox();
             labelVariable_SGA = new Label();
             groupBoxOutput_SGA = new GroupBox();
             textBoxResult_SGA = new TextBox();
             labelResult_SGA = new Label();
             buttonHelp = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_SGA).BeginInit();
-            groupBoxCondition_SGA.SuspendLayout();
+            groupBoxCondition_SGA = new GroupBox();
+            labelCondition_SGA = new Label();
+            pictureBoxFormula_SGA = new PictureBox();
             groupBoxInput_SGA.SuspendLayout();
             groupBoxOutput_SGA.SuspendLayout();
+            groupBoxCondition_SGA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_SGA).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBoxFormula_SGA
-            // 
-            pictureBoxFormula_SGA.Image = (Image)resources.GetObject("pictureBoxFormula_SGA.Image");
-            pictureBoxFormula_SGA.Location = new Point(611, 22);
-            pictureBoxFormula_SGA.Name = "pictureBoxFormula_SGA";
-            pictureBoxFormula_SGA.Size = new Size(106, 61);
-            pictureBoxFormula_SGA.TabIndex = 0;
-            pictureBoxFormula_SGA.TabStop = false;
-            pictureBoxFormula_SGA.UseWaitCursor = true;
-            // 
-            // groupBoxCondition_SGA
-            // 
-            groupBoxCondition_SGA.Controls.Add(labelCondition_SGA);
-            groupBoxCondition_SGA.Controls.Add(pictureBoxFormula_SGA);
-            groupBoxCondition_SGA.Location = new Point(12, 25);
-            groupBoxCondition_SGA.Name = "groupBoxCondition_SGA";
-            groupBoxCondition_SGA.Size = new Size(776, 244);
-            groupBoxCondition_SGA.TabIndex = 1;
-            groupBoxCondition_SGA.TabStop = false;
-            groupBoxCondition_SGA.Text = "Условие";
-            groupBoxCondition_SGA.UseWaitCursor = true;
-            groupBoxCondition_SGA.Enter += groupBox1_Enter;
-            // 
-            // labelCondition_SGA
-            // 
-            labelCondition_SGA.AutoSize = true;
-            labelCondition_SGA.Font = new Font("Segoe UI", 9F);
-            labelCondition_SGA.Location = new Point(22, 31);
-            labelCondition_SGA.Name = "labelCondition_SGA";
-            labelCondition_SGA.Size = new Size(458, 30);
-            labelCondition_SGA.TabIndex = 3;
-            labelCondition_SGA.Text = "Дано выражение вычислить его значение при x = 3, результат вывести в TextBox. \r\nОкруглить до трёх знаков после запятой.";
-            labelCondition_SGA.UseWaitCursor = true;
-            // 
-            // button_SGA
-            // 
-            button_SGA.Location = new Point(667, 393);
-            button_SGA.Name = "button_SGA";
-            button_SGA.Size = new Size(106, 32);
-            button_SGA.TabIndex = 0;
-            button_SGA.Text = "Выполнить";
-            button_SGA.UseVisualStyleBackColor = true;
-            button_SGA.Click += button_SGA_Click;
             // 
             // textBoxVariable_SGA
             // 
@@ -102,6 +58,17 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             textBoxVariable_SGA.TabIndex = 2;
             textBoxVariable_SGA.Text = "3";
             textBoxVariable_SGA.TextChanged += textBoxVariable_SGA_TextChanged;
+            // 
+            // buttonDone_SGA
+            // 
+            buttonDone_SGA.Cursor = Cursors.Hand;
+            buttonDone_SGA.Location = new Point(667, 393);
+            buttonDone_SGA.Name = "buttonDone_SGA";
+            buttonDone_SGA.Size = new Size(106, 32);
+            buttonDone_SGA.TabIndex = 0;
+            buttonDone_SGA.Text = "Выполнить";
+            buttonDone_SGA.UseVisualStyleBackColor = true;
+            buttonDone_SGA.Click += button_SGA_Click;
             // 
             // groupBoxInput_SGA
             // 
@@ -156,6 +123,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             // 
             // buttonHelp
             // 
+            buttonHelp.Cursor = Cursors.Hand;
             buttonHelp.FlatStyle = FlatStyle.Flat;
             buttonHelp.Location = new Point(601, 393);
             buttonHelp.Name = "buttonHelp";
@@ -165,25 +133,56 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             buttonHelp.UseVisualStyleBackColor = true;
             buttonHelp.Click += buttonHelp_Click;
             // 
+            // groupBoxCondition_SGA
+            // 
+            groupBoxCondition_SGA.Controls.Add(labelCondition_SGA);
+            groupBoxCondition_SGA.Controls.Add(pictureBoxFormula_SGA);
+            groupBoxCondition_SGA.Location = new Point(15, 23);
+            groupBoxCondition_SGA.Name = "groupBoxCondition_SGA";
+            groupBoxCondition_SGA.Size = new Size(773, 251);
+            groupBoxCondition_SGA.TabIndex = 6;
+            groupBoxCondition_SGA.TabStop = false;
+            groupBoxCondition_SGA.Text = "Условие";
+            // 
+            // labelCondition_SGA
+            // 
+            labelCondition_SGA.AutoSize = true;
+            labelCondition_SGA.Location = new Point(29, 32);
+            labelCondition_SGA.Name = "labelCondition_SGA";
+            labelCondition_SGA.Size = new Size(458, 30);
+            labelCondition_SGA.TabIndex = 7;
+            labelCondition_SGA.Text = "Дано выражение вычислить его значение при x = 3, результат вывести в TextBox. \r\nОкруглить до трёх знаков после запятой.";
+            labelCondition_SGA.Click += label1_Click;
+            // 
+            // pictureBoxFormula_SGA
+            // 
+            pictureBoxFormula_SGA.Image = (Image)resources.GetObject("pictureBoxFormula_SGA.Image");
+            pictureBoxFormula_SGA.Location = new Point(608, 32);
+            pictureBoxFormula_SGA.Name = "pictureBoxFormula_SGA";
+            pictureBoxFormula_SGA.Size = new Size(103, 66);
+            pictureBoxFormula_SGA.TabIndex = 0;
+            pictureBoxFormula_SGA.TabStop = false;
+            pictureBoxFormula_SGA.Click += pictureBox1_Click;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(groupBoxCondition_SGA);
             Controls.Add(buttonHelp);
             Controls.Add(groupBoxOutput_SGA);
             Controls.Add(groupBoxInput_SGA);
-            Controls.Add(button_SGA);
-            Controls.Add(groupBoxCondition_SGA);
+            Controls.Add(buttonDone_SGA);
             Name = "FormMain";
             Text = "Спринт 6 | Таск 0 | Вариант 9 | Слоква Г. А. ";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_SGA).EndInit();
-            groupBoxCondition_SGA.ResumeLayout(false);
-            groupBoxCondition_SGA.PerformLayout();
             groupBoxInput_SGA.ResumeLayout(false);
             groupBoxInput_SGA.PerformLayout();
             groupBoxOutput_SGA.ResumeLayout(false);
             groupBoxOutput_SGA.PerformLayout();
+            groupBoxCondition_SGA.ResumeLayout(false);
+            groupBoxCondition_SGA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_SGA).EndInit();
             ResumeLayout(false);
         }
 
@@ -222,17 +221,16 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
         }
 
         #endregion
-
-        private PictureBox pictureBoxFormula_SGA;
-        private GroupBox groupBoxCondition_SGA;
-        private Button button_SGA;
+        private Button buttonDone_SGA;
         private TextBox textBoxVariable_SGA;
-        private Label labelCondition_SGA;
         private GroupBox groupBoxInput_SGA;
         private Label labelVariable_SGA;
         private GroupBox groupBoxOutput_SGA;
         private TextBox textBoxResult_SGA;
         private Label labelResult_SGA;
         private Button buttonHelp;
+        private GroupBox groupBoxCondition_SGA;
+        private PictureBox pictureBoxFormula_SGA;
+        private Label labelCondition_SGA;
     }
 }

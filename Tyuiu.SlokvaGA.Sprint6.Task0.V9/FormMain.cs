@@ -10,5 +10,15 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
         {
             MessageBox.Show("Таск 0 выполнил студент группы ИСПб-25-1 Слоква Григорий Александрович");
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
