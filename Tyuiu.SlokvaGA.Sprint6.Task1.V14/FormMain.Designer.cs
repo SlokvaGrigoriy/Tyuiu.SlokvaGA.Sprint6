@@ -34,8 +34,8 @@
             labelFunc_SGA = new Label();
             labelCondition_SGA = new Label();
             groupBoxInput_SGA = new GroupBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            textBoxStart_SGA = new TextBox();
+            textBoxStop_SGA = new TextBox();
             labelStart_SGA = new Label();
             labelEnd_SGA = new Label();
             labelResult_SGA = new Label();
@@ -92,8 +92,8 @@
             // 
             // groupBoxInput_SGA
             // 
-            groupBoxInput_SGA.Controls.Add(textBox1);
-            groupBoxInput_SGA.Controls.Add(textBox2);
+            groupBoxInput_SGA.Controls.Add(textBoxStart_SGA);
+            groupBoxInput_SGA.Controls.Add(textBoxStop_SGA);
             groupBoxInput_SGA.Controls.Add(labelStart_SGA);
             groupBoxInput_SGA.Controls.Add(labelEnd_SGA);
             groupBoxInput_SGA.Location = new Point(12, 352);
@@ -103,23 +103,19 @@
             groupBoxInput_SGA.TabStop = false;
             groupBoxInput_SGA.Text = "Ввод данных";
             // 
-            // textBox1
+            // textBoxStart_SGA
             // 
-            textBox1.Location = new Point(17, 37);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 6;
-            textBox1.Text = "-5";
+            textBoxStart_SGA.Location = new Point(17, 37);
+            textBoxStart_SGA.Name = "textBoxStart_SGA";
+            textBoxStart_SGA.Size = new Size(100, 23);
+            textBoxStart_SGA.TabIndex = 6;
             // 
-            // textBox2
+            // textBoxStop_SGA
             // 
-            textBox2.Location = new Point(138, 37);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 7;
-            textBox2.Text = "5";
+            textBoxStop_SGA.Location = new Point(138, 37);
+            textBoxStop_SGA.Name = "textBoxStop_SGA";
+            textBoxStop_SGA.Size = new Size(100, 23);
+            textBoxStop_SGA.TabIndex = 7;
             // 
             // labelStart_SGA
             // 
@@ -163,6 +159,7 @@
             // 
             // textBoxResult_SGA
             // 
+            textBoxResult_SGA.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             textBoxResult_SGA.Location = new Point(6, 43);
             textBoxResult_SGA.Multiline = true;
             textBoxResult_SGA.Name = "textBoxResult_SGA";
@@ -170,6 +167,7 @@
             textBoxResult_SGA.ScrollBars = ScrollBars.Vertical;
             textBoxResult_SGA.Size = new Size(236, 365);
             textBoxResult_SGA.TabIndex = 11;
+            textBoxResult_SGA.TextChanged += textBoxResult_SGA_TextChanged;
             // 
             // button1
             // 
@@ -227,8 +225,8 @@
         private Label labelResult_SGA;
         private PictureBox pictureBox1;
         private Label labelFunc_SGA;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox textBoxStart_SGA;
+        private TextBox textBoxStop_SGA;
         private GroupBox groupBoxOutput_SGA;
         private Button button1;
         private Button button2;

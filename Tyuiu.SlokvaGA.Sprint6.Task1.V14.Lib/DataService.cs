@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.SlokvaGA.Sprint6.Task1.V14.Lib
 {
@@ -14,7 +15,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task1.V14.Lib
                 int x = startValue + i;
                 double denominator = Math.Cos(x) + x;
 
-                if (Math.Abs(denominator) <= 0)
+                if (Math.Abs(denominator) < 0.0000001)
                 {
                     valueArray[i] = 0;
                 }

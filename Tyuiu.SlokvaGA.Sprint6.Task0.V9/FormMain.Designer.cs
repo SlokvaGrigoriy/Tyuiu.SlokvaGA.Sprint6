@@ -53,7 +53,6 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task0.V9
             // 
             textBoxVariable_SGA.Location = new Point(32, 62);
             textBoxVariable_SGA.Name = "textBoxVariable_SGA";
-            textBoxVariable_SGA.ReadOnly = true;
             textBoxVariable_SGA.Size = new Size(89, 23);
             textBoxVariable_SGA.TabIndex = 2;
             textBoxVariable_SGA.Text = "3";
