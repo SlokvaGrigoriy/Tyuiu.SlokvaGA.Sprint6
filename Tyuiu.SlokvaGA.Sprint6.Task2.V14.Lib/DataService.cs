@@ -12,15 +12,15 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task2.V14.Lib
             for (int i = 0; i < len; i++)
             {
                 int x = startValue + i;
-                double denominator = Math.Cos(x) + x;
+                double denominator = 2 * x - 0.5;
 
-                if (Math.Abs(denominator) <= 0)
+                if (denominator == 0)
                 {
                     valueArray[i] = 0;
                 }
                 else
                 {
-                    double result = (2 * x + 6) / denominator - 3;
+                    double result = 5 - 3 * x + (1 + Math.Sin(x)) / denominator;
                     valueArray[i] = Math.Round(result, 2);
                 }
             }
