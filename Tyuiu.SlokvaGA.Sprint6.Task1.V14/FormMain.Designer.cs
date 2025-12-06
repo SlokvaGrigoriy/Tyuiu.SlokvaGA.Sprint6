@@ -204,7 +204,7 @@
             Controls.Add(groupBoxInput_SGA);
             Controls.Add(groupBoxCondition_SGA);
             Name = "FormMain";
-            Text = "Спринт 6 | Таск 1 | Вариант 0 | Слоква Г. А.";
+            Text = "Спринт 6 | Таск 1 | Вариант 14 | Слоква Г. А.";
             groupBoxCondition_SGA.ResumeLayout(false);
             groupBoxCondition_SGA.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
