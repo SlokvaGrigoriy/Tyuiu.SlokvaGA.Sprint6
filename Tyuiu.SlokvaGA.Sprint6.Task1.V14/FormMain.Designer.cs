@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             groupBoxCondition_SGA = new GroupBox();
-            pictureBox1 = new PictureBox();
+            pictureBoxFormula_SGA = new PictureBox();
             labelFunc_SGA = new Label();
             labelCondition_SGA = new Label();
             groupBoxInput_SGA = new GroupBox();
@@ -41,17 +41,17 @@
             labelResult_SGA = new Label();
             groupBoxOutput_SGA = new GroupBox();
             textBoxResult_SGA = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            buttonInfo_SGA = new Button();
+            buttonDone_SGA = new Button();
             groupBoxCondition_SGA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_SGA).BeginInit();
             groupBoxInput_SGA.SuspendLayout();
             groupBoxOutput_SGA.SuspendLayout();
             SuspendLayout();
             // 
             // groupBoxCondition_SGA
             // 
-            groupBoxCondition_SGA.Controls.Add(pictureBox1);
+            groupBoxCondition_SGA.Controls.Add(pictureBoxFormula_SGA);
             groupBoxCondition_SGA.Controls.Add(labelFunc_SGA);
             groupBoxCondition_SGA.Controls.Add(labelCondition_SGA);
             groupBoxCondition_SGA.Location = new Point(12, 12);
@@ -61,15 +61,15 @@
             groupBoxCondition_SGA.TabStop = false;
             groupBoxCondition_SGA.Text = "Условие";
             // 
-            // pictureBox1
+            // pictureBoxFormula_SGA
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(128, 141);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(239, 40);
-            pictureBox1.TabIndex = 7;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBoxFormula_SGA.Image = (Image)resources.GetObject("pictureBoxFormula_SGA.Image");
+            pictureBoxFormula_SGA.Location = new Point(128, 141);
+            pictureBoxFormula_SGA.Name = "pictureBoxFormula_SGA";
+            pictureBoxFormula_SGA.Size = new Size(196, 40);
+            pictureBoxFormula_SGA.TabIndex = 7;
+            pictureBoxFormula_SGA.TabStop = false;
+            pictureBoxFormula_SGA.Click += pictureBox1_Click;
             // 
             // labelFunc_SGA
             // 
@@ -169,37 +169,37 @@
             textBoxResult_SGA.TabIndex = 11;
             textBoxResult_SGA.TextChanged += textBoxResult_SGA_TextChanged;
             // 
-            // button1
+            // buttonInfo_SGA
             // 
-            button1.BackColor = Color.DodgerBlue;
-            button1.Cursor = Cursors.Hand;
-            button1.Location = new Point(271, 361);
-            button1.Name = "button1";
-            button1.Size = new Size(97, 74);
-            button1.TabIndex = 9;
-            button1.Text = "Справка";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            buttonInfo_SGA.BackColor = Color.DodgerBlue;
+            buttonInfo_SGA.Cursor = Cursors.Hand;
+            buttonInfo_SGA.Location = new Point(271, 361);
+            buttonInfo_SGA.Name = "buttonInfo_SGA";
+            buttonInfo_SGA.Size = new Size(97, 74);
+            buttonInfo_SGA.TabIndex = 9;
+            buttonInfo_SGA.Text = "Справка";
+            buttonInfo_SGA.UseVisualStyleBackColor = false;
+            buttonInfo_SGA.Click += button1_Click;
             // 
-            // button2
+            // buttonDone_SGA
             // 
-            button2.BackColor = Color.DarkGreen;
-            button2.Cursor = Cursors.Hand;
-            button2.Location = new Point(383, 361);
-            button2.Name = "button2";
-            button2.Size = new Size(151, 74);
-            button2.TabIndex = 10;
-            button2.Text = "Выполнить";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            buttonDone_SGA.BackColor = Color.DarkGreen;
+            buttonDone_SGA.Cursor = Cursors.Hand;
+            buttonDone_SGA.Location = new Point(383, 361);
+            buttonDone_SGA.Name = "buttonDone_SGA";
+            buttonDone_SGA.Size = new Size(151, 74);
+            buttonDone_SGA.TabIndex = 10;
+            buttonDone_SGA.Text = "Выполнить";
+            buttonDone_SGA.UseVisualStyleBackColor = false;
+            buttonDone_SGA.Click += button2_Click;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonDone_SGA);
+            Controls.Add(buttonInfo_SGA);
             Controls.Add(groupBoxOutput_SGA);
             Controls.Add(groupBoxInput_SGA);
             Controls.Add(groupBoxCondition_SGA);
@@ -207,7 +207,7 @@
             Text = "Спринт 6 | Таск 1 | Вариант 14 | Слоква Г. А.";
             groupBoxCondition_SGA.ResumeLayout(false);
             groupBoxCondition_SGA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_SGA).EndInit();
             groupBoxInput_SGA.ResumeLayout(false);
             groupBoxInput_SGA.PerformLayout();
             groupBoxOutput_SGA.ResumeLayout(false);
@@ -223,13 +223,13 @@
         private Label labelStart_SGA;
         private Label labelEnd_SGA;
         private Label labelResult_SGA;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBoxFormula_SGA;
         private Label labelFunc_SGA;
         private TextBox textBoxStart_SGA;
         private TextBox textBoxStop_SGA;
         private GroupBox groupBoxOutput_SGA;
-        private Button button1;
-        private Button button2;
+        private Button buttonInfo_SGA;
+        private Button buttonDone_SGA;
         private TextBox textBoxResult_SGA;
     }
 }
