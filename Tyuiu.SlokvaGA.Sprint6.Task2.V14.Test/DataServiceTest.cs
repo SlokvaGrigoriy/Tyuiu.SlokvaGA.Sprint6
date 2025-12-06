@@ -18,8 +18,8 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task2.V14.Test
             double[] valueWaitArray;
             valueWaitArray = new double[len];
 
-            valueWaitArray[0] = 20.00;
-            valueWaitArray[1] = 16.97;
+            valueWaitArray[0] = 19.81;
+            valueWaitArray[1] = 16.79;
             valueWaitArray[2] = 13.87;
             valueWaitArray[3] = 10.98;
             valueWaitArray[4] = 7.94;
