@@ -9,25 +9,22 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task3.V17.Lib
             int rows = matrix.GetLength(0);
             int columns = matrix.GetLength(1);
 
-            int[,] sortmas = (int[,])matrix.Clone();
+            int[,] res = (int[,])matrix.Clone();
 
-            for (int i = 0; i < rows - 1; i++)
+            int[] column4 = new int[3];
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 0; j < rows - i - 1; j++)
-                {
-                    if (sortmas[j, 3] > sortmas[j + 1, 3])
-                    {
-                        for (int k = 0; k < columns; k++)
-                        {
-                            int temp = sortmas[j, k];
-                            sortmas[j, k] = sortmas[j + 1, k];
-                            sortmas[j + 1, k] = temp;
-                        }
-                    }
-                }
+                column4[i] = res[i, 3];
             }
 
-            return sortmas;
+            Array.Sort(column4);
+
+            for (int i = 0; i < 3; i++)
+            {
+                res[i, 3] = column4[i];
+            }
+
+            return res;
         }
     }
 }
