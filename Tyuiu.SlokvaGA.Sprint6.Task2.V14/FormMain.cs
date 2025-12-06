@@ -33,15 +33,15 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task2.V14
 
                 valueArray = ds.GetMassFunction(startStep, stopStep);
 
-                this.chartFunction.Titles.Add("График функции sin(x)");
+                this.chartVisFunc_SGA.Titles.Add("График функции sin(x)");
 
-                this.chartFunction.CharAreas[0].AxisX.Titles.Add("Ось X");
-                this.chartFunction.CharAreas[0].AxisY.Titles.Add("Ось Y");
-                for (int i = 0; i <= len - 1; i++) ;
+                this.chartVisFunc_SGA.ChartAreas[0].AxisX.Title = ("Ось X");
+                this.chartVisFunc_SGA.ChartAreas[0].AxisY.Title = ("Ось Y");
+                for (int i = 0; i <= len - 1; i++)
                 {
-                    this.dataGridViewFunction.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
+                    this.dataGridViewTable_SGA.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
 
-                    this.chartFunction.Series[0].Points.AddXY(startStep, valueArray[i]);
+                    this.chartVisFunc_SGA.Series[0].Points.AddXY(startStep, valueArray[i]);
 
                     startStep++;
                 }
@@ -56,6 +56,26 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task2.V14
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDone_SGA_MouseEnter(object sender, EventArgs e)
+        {
+            buttonDone_SGA.BackColor = Color.Red;
+        }
+
+        private void buttonDone_SGA_MouseLeave(object sender, EventArgs e)
+        {
+            buttonDone_SGA.BackColor = Color.Green;
+        }
+
+        private void buttonDone_SGA_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonDone_SGA.BackColor = Color.Blue;
         }
     }
 }
