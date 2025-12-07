@@ -10,7 +10,7 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task6.V4.Test
         {
             DataService ds = new DataService();
             string path = @"C:\Files\InPutDataFileTask6V4.txt";
-            File.WriteAllText(path, "SnBC dYG\nnnndrM zLfkixV\nuHV RbvnKtNW");
+            File.ReadAllText(path);
             Assert.AreEqual("SnBC nnndrM RbvnKtNW", ds.CollectTextFromFile(path));
         }
     }

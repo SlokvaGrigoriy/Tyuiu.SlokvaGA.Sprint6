@@ -12,18 +12,25 @@ namespace Tyuiu.SlokvaGA.Sprint6.Task6.V4.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
+                int lineNumber = 1;
+
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string[] words = line.Split(' ', System.StringSplitOptions.RemoveEmptyEntries);
-                    foreach (string word in words)
+                    if (lineNumber == 1 || lineNumber == 3 || lineNumber == 5)
                     {
-                        if (word.IndexOf('n', System.StringComparison.OrdinalIgnoreCase) >= 0)
+                        string[] words = line.Split(' ', System.StringSplitOptions.RemoveEmptyEntries);
+                        foreach (string word in words)
                         {
-                            if (result.Length > 0)
-                                result.Append(' ');
-                            result.Append(word);
+                            if (word.IndexOf('n', System.StringComparison.OrdinalIgnoreCase) >= 0)
+                            {
+                                if (result.Length > 0)
+                                    result.Append(' ');
+                                result.Append(word);
+                                break;
+                            }
                         }
                     }
+                    lineNumber++;
                 }
             }
             return result.ToString();
