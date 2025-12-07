@@ -1,6 +1,6 @@
-﻿namespace Tyuiu.SlokvaGA.Sprint6.Task6.V4
+﻿namespace Tyuiu.SlokvaGA.Sprint6.Task7.V11
 {
-    partial class FormAbout_SGA
+    partial class FormAbout
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout_SGA));
-            pictureBoxAvatar_SGA = new PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
+            pictureBox1 = new PictureBox();
             labelAbout_SGA = new Label();
             buttonDone_SGA = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar_SGA).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBoxAvatar_SGA
+            // pictureBox1
             // 
-            pictureBoxAvatar_SGA.Image = (Image)resources.GetObject("pictureBoxAvatar_SGA.Image");
-            pictureBoxAvatar_SGA.Location = new Point(12, 12);
-            pictureBoxAvatar_SGA.Name = "pictureBoxAvatar_SGA";
-            pictureBoxAvatar_SGA.Size = new Size(255, 192);
-            pictureBoxAvatar_SGA.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxAvatar_SGA.TabIndex = 0;
-            pictureBoxAvatar_SGA.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(255, 192);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += ButtonDone_SGA_Click;
             // 
             // labelAbout_SGA
             // 
@@ -62,30 +63,30 @@
             buttonDone_SGA.TabIndex = 2;
             buttonDone_SGA.Text = "OK";
             buttonDone_SGA.UseVisualStyleBackColor = true;
-            buttonDone_SGA.Click += buttonDone_SGA_Click;
+            buttonDone_SGA.Click += ButtonDone_SGA_Click;
             // 
-            // FormAbout_SGA
+            // FormAbout
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(648, 219);
             Controls.Add(buttonDone_SGA);
             Controls.Add(labelAbout_SGA);
-            Controls.Add(pictureBoxAvatar_SGA);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimumSize = new Size(664, 258);
-            Name = "FormAbout_SGA";
+            Name = "FormAbout";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "О программе";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar_SGA).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBoxAvatar_SGA;
+        private PictureBox pictureBox1;
         private Label labelAbout_SGA;
         private Button buttonDone_SGA;
     }
